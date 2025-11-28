@@ -27,7 +27,7 @@ pip install -U cookiecutter
 Generate a Python package project:
 
 ```bash
-cookiecutter [https://github.com/audreyfeldroy/cookiecutter-pypackage.git](https://github.com/JohnDoe6345789/cookiecutter-pypackage)
+cookiecutter https://github.com/JohnDoe6345789/cookiecutter-pypackage
 ```
 
 Then:
