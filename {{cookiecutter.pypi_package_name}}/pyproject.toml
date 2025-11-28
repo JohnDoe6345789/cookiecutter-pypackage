@@ -55,3 +55,33 @@ select = [
 
 [tool.uv]
 package = true
+
+# -------------------------------------------------------------------
+# Poetry configuration (added)
+# -------------------------------------------------------------------
+
+[tool.poetry]
+name = "{{cookiecutter.pypi_package_name}}"
+version = "{{ cookiecutter.first_version }}"
+description = "{{cookiecutter.project_short_description}}"
+readme = "README.md"
+license = "MIT"
+authors = ["{{cookiecutter.full_name}} <{{cookiecutter.email}}>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+typer = "*"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "*"
+pytest = "*"
+ruff = "*"
+ty = "*"
+ipdb = "*"
+
+[tool.poetry.scripts]
+{{cookiecutter.project_slug}} = "{{cookiecutter.project_slug}}.cli:app"
+
+[build-system]
+requires = ["poetry-core>=1.9.0"]
+build-backend = "poetry.core.masonry.api"
