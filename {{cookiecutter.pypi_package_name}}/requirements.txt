@@ -1,0 +1,9 @@
+lxml
+pytest
+requests
+fastapi
+uvicorn
+pydantic
+python-dotenv
+black
+mypy
