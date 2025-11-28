@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  {{cookiecutter.pypi_package_name}}_service:
+    image: {{cookiecutter.pypi_package_name}}:latest
+    container_name: {{cookiecutter.pypi_package_name}}_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - APP_ENV={{cookiecutter.pypi_package_name}}_env
+      - API_KEY={{cookiecutter.pypi_package_name}}_key
+    volumes:
+      - ./{{cookiecutter.pypi_package_name}}_data:/app/data
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+networks:
+  default:
+    name: CHANGEME_network
