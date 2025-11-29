@@ -25,6 +25,12 @@ test = [
     "ruff",  # linting
     "ty", # checking types
     "ipdb", # debugging
+    "python-dotenv",
+    "requests",
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "lxml"
 ]
 
 [project.urls]
@@ -78,6 +84,10 @@ pytest = "*"
 ruff = "*"
 ty = "*"
 ipdb = "*"
+black = "*"
+mypy = "*"
+flake8 = "*"
+
 
 [tool.poetry.scripts]
 {{cookiecutter.project_slug}} = "{{cookiecutter.project_slug}}.cli:app"
