@@ -30,7 +30,82 @@ test = [
     "fastapi",
     "uvicorn",
     "pydantic",
-    "lxml"
+    "lxml",
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "tensorflow",
+    "keras",
+    "jax",
+    "flax",
+    "transformers",
+    "accelerate",
+    "sentencepiece",
+    "onnx",
+    "onnxruntime",
+    "diffusers",
+    "pillow",
+    "numpy",
+    "scipy",
+
+    # Language and text parsing
+    "spacy",
+    "nltk",
+    "gensim",
+    "beautifulsoup4",
+    "lxml",
+    "regex",
+    "tqdm",
+    "textblob",
+    "rapidfuzz",
+    
+    # Game creation
+    "pygame",
+    "pyglet",
+    "arcade",
+    
+    # Web development
+    "flask",
+    "django",
+    "fastapi",
+    "uvicorn",
+    "starlette",
+    "jinja2",
+    "requests",
+    "httpx",
+    
+    # Video editing / processing
+    "opencv-python",
+    "moviepy",
+    "ffmpeg-python",
+    "imageio",
+    
+    # Audio creation
+    "pydub",
+    "soundfile",
+    "librosa",
+    "wave",
+    "scikits.audiolab",
+    
+    # Reverse engineering
+    "capstone",
+    "keystone-engine",
+    "unicorn",
+    "lief",
+    
+    # Networking / TCP/UDP
+    "scapy",
+    "aiohttp",
+    "websockets",
+    "socketio",
+    
+    # Data / util
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "plotly",
+    "pyyaml",
+    "rich"
 ]
 
 [project.urls]
@@ -87,7 +162,7 @@ ipdb = "*"
 black = "*"
 mypy = "*"
 flake8 = "*"
-
+pyinstaller = "*"
 
 [tool.poetry.scripts]
 {{cookiecutter.project_slug}} = "{{cookiecutter.project_slug}}.cli:app"
