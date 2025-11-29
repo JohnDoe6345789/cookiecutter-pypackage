@@ -79,6 +79,7 @@ test = [
     "moviepy",
     "ffmpeg-python",
     "imageio",
+    "pillow",
     
     # Audio creation
     "pydub",
@@ -113,7 +114,21 @@ test = [
     # Web
     "bottle",
     "pyramid",
-    "django"
+    "django",
+
+    # Fun
+    "TTS",
+
+    # 3D
+    "trimesh",
+    "pyvista",
+    "open3d",
+    "pygalmesh",
+    "cadquery",
+    "pythonocc-core",
+    "meshio",
+    "assimp",
+    "sdf"
 ]
 
 [project.urls]
