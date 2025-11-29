@@ -108,7 +108,12 @@ test = [
     "rich",
 
     # GUI
-    "pyqt6"
+    "pyqt6",
+
+    # Web
+    "bottle",
+    "pyramid",
+    "django"
 ]
 
 [project.urls]
