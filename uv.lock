@@ -191,7 +191,13 @@ test = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "coverage" },
+    { name = "ipdb" },
+    { name = "pytest" },
+    { name = "pytest-cookies" },
+    { name = "ruff" },
     { name = "rust-just" },
+    { name = "ty" },
 ]
 
 [package.metadata]
@@ -210,7 +216,15 @@ requires-dist = [
 provides-extras = ["test"]
 
 [package.metadata.requires-dev]
-dev = [{ name = "rust-just", specifier = ">=1.42.4" }]
+dev = [
+    { name = "coverage" },
+    { name = "ipdb" },
+    { name = "pytest" },
+    { name = "pytest-cookies" },
+    { name = "ruff" },
+    { name = "rust-just", specifier = ">=1.42.4" },
+    { name = "ty" },
+]
 
 [[package]]
 name = "coverage"

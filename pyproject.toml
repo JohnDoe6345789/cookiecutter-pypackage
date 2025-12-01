@@ -56,5 +56,11 @@ testpaths = [
 
 [dependency-groups]
 dev = [
+    "coverage",
+    "pytest",
+    "pytest-cookies",
+    "ruff",
+    "ty",
+    "ipdb",
     "rust-just>=1.42.4",
 ]
