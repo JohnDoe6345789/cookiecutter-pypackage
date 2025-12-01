@@ -18,6 +18,12 @@
 
 ## Quickstart
 
+If your miniconda3 is broken, try:
+
+```powershell
+& "C:\tools\miniconda3\Scripts\conda.exe" init powershell
+```
+
 Install the latest Cookiecutter if you haven't installed it yet:
 
 ```bash
