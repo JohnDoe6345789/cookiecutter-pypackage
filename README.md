@@ -64,3 +64,16 @@ Explore other forks to get ideas. See the [network](https://github.com/audreyfel
 
 I also accept pull requests on this, if they're small, atomic, and if they
 make my own packaging experience better.
+
+## Running tests locally
+
+The test suite relies on the `cookies` fixture from `pytest-cookies`, so make
+sure the testing extras are installed before running pytest:
+
+```bash
+python -m pip install .[test]
+pytest
+```
+
+If you use `just`, you can also run `just test` in a rendered project once the
+tool is available on your system.
