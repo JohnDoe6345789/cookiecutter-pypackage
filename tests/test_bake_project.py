@@ -81,6 +81,21 @@ def test_bake_with_defaults(cookies):
         assert "tests" in found_toplevel_files
 
 
+def test_actions_workflow_is_rendered(cookies):
+    """Ensure GitHub Actions workflow renders without templating collisions."""
+
+    with bake_in_temp_dir(cookies) as result:
+        workflow_path = result.project.join(".github", "workflows", "test.yml")
+
+        assert workflow_path.isfile()
+
+        workflow_text = workflow_path.read()
+
+        assert "${{ matrix.os }}" in workflow_text
+        assert "${{ matrix.python-version }}" in workflow_text
+        assert "actions/checkout@v4" in workflow_text
+
+
 def test_bake_and_run_tests(cookies):
     with bake_in_temp_dir(cookies) as result:
         assert result.project.isdir()
