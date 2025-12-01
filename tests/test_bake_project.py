@@ -1,6 +1,7 @@
 import datetime
 import os
 import shlex
+import shutil
 import subprocess
 import sys
 from contextlib import contextmanager
@@ -120,6 +121,7 @@ def test_bake_with_apostrophe_and_run_tests(cookies):
         run_inside_dir("pytest", str(result.project)) == 0
 
 
+@pytest.mark.skipif(shutil.which("just") is None, reason="just is not installed")
 def test_just_list(cookies):
     with bake_in_temp_dir(cookies) as result:
         # The supplied justfile does not support win32

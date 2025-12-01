@@ -1,5 +1,6 @@
 lxml
 pytest
+pytest-cookies
 requests
 fastapi
 uvicorn
