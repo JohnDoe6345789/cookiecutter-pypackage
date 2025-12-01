@@ -24,6 +24,8 @@ If your miniconda3 is broken, try:
 & "C:\tools\miniconda3\Scripts\conda.exe" init powershell
 ```
 
+You can also try my repair_conda repo.
+
 Install the latest Cookiecutter if you haven't installed it yet:
 
 ```bash
