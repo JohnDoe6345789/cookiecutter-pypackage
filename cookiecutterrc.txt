@@ -1,0 +1,7 @@
+default_context:
+  full_name: "Richard Ward"
+  email: "richard.ward637@outlook.com"
+  github_username: "JohnDoe6345789"
+  license: "MIT"
+cookiecutters_dir: "~/.cookiecutters/"
+replay_dir: "~/.cookiecutter_replay/"
